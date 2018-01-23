@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cookies Beta</title>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src='index.js'></script>
+		<link href='style.css' rel='stylesheet'/>
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico" rel="stylesheet">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	</head>
+	<body onLoad="changeCookieCount()">
+		<div id='main-button'>
+		<h1>Cookie Confectionary</h1>
+			<img src='http://sprinkles.com/v3_images/splash-small/cookies/flavors/double-chocolate.jpg' width='150px' onClick='addChocolate()' /><br/><span>Chocolate: </span><span id='chocolate'>0</span><br/>
+			<input class='btn btn-success' type='button' value='add' onClick="addChocolate()" /><br/>
+			<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ38ACUhiqi1BfD0TRidFmyIXeFF57SDnGZAMoGwWOavRfFdYCn6Q' width='150px' onClick='addSugar()' /><br/><span>Sugar: </span><span id='sugar'>0</span><br/>
+			<input class='btn btn-success' type='button' value='add' onClick="addSugar()" /><br/>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKc6GYttxzSCibeUW8X140O8ofYDpkNsqfJSifZc_2LMhWSXpS" width="150px" onClick="addLemon()" /><br/><span>Lemon: </span><span id='lemon' id='lemon'>0</span><br/>
+			<input class='btn btn-success' type='button' value='add' onClick='addLemon()' /><br/><br/>
+			<input class='btn btn-danger' type='button' value='Reset' onClick='resetCookieCount()' />
+		</div>	
+	</body>
+</html>
